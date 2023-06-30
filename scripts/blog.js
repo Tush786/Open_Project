@@ -320,3 +320,152 @@ function displayResults(data){
 
       });
 }
+
+// <-------------------- API call for Health news-------------->
+
+document.getElementById("health-news").addEventListener("click",F_Health_News);
+
+let KEY = "39f6d3ad984f4b23905100e49c1ab97f";
+async function F_Health_News(){
+ 
+  try {
+
+     let response = await fetch(
+      `https://newsapi.org/v2/everything?q=Health&sortBy=popularity&pageSize=5&language=en&apiKey=${KEY}`
+    );
+   
+    let data = await response.json();
+    
+    totalpages = data.length;
+    document.getElementById("Page_No").textContent = Page;
+    console.log(data.articles);
+
+    displayResults(data.articles);
+  } catch (error) {
+    console.log(error);
+    var errorElement = document.createElement("h1");
+    errorElement.textContent = "Result Not Found!";
+    Left_Container.append(errorElement);
+  }
+};
+
+// <-------------------- Health news Portion done--------------------->
+
+// <------------------------- Sport News API call------------>
+// document.getElementById("sports-news").addEventListener("click",F_Sports_News);
+
+let Key_S = "39f6d3ad984f4b23905100e49c1ab97f";
+F_Sports_News()
+async function F_Sports_News(){
+ 
+  try {
+
+     let response = await fetch(
+      `https://newsapi.org/v2/everything?q=Sports&sortBy=popularity&pageSize=5&language=en&apiKey=${Key_S}`
+    );
+   
+    let data = await response.json();
+    
+    totalpages = data.length;
+    document.getElementById("Page_No").textContent = Page;
+    console.log(data.articles);
+
+    displayResults(data.articles);
+  } catch (error) {
+    console.log(error);
+    var errorElement = document.createElement("h1");
+    errorElement.textContent = "Result Not Found!";
+    Left_Container.append(errorElement);
+  }
+};
+
+// <<<<<---------------- Sports API Call End Here---------------->
+
+// <--------------- Cricket API Call ---------------->
+
+document.getElementById("Cricket").addEventListener("click",F_Cricket_News);
+
+let Key_C = "39f6d3ad984f4b23905100e49c1ab97f";
+async function F_Cricket_News(){
+ 
+  try {
+
+     let response = await fetch(
+      `https://newsapi.org/v2/everything?q=Cricket&sortBy=popularity&pageSize=5&language=en&apiKey=${Key_C}`
+    );
+   
+    let data = await response.json();
+    
+    totalpages = data.length;
+    document.getElementById("Page_No").textContent = Page;
+    console.log(data.articles);
+
+    displayResults(data.articles);
+  } catch (error) {
+    console.log(error);
+    var errorElement = document.createElement("h1");
+    errorElement.textContent = "Result Not Found!";
+    Left_Container.append(errorElement);
+  }
+};
+
+// <-------------------- Cricket News End Here------------------->
+
+
+document.getElementById("Football").addEventListener("click",F_Football_News);
+
+let Key_F = "39f6d3ad984f4b23905100e49c1ab97f";
+async function F_Football_News(){
+ 
+  try {
+
+     let response = await fetch(
+      `https://newsapi.org/v2/everything?q=Football&sortBy=popularity&pageSize=5&language=en&apiKey=${Key_F}`
+    );
+   
+    let data = await response.json();
+    
+    totalpages = data.length;
+    document.getElementById("Page_No").textContent = Page;
+    console.log(data.articles);
+
+    displayResults(data.articles);
+  } catch (error) {
+    console.log(error);
+    var errorElement = document.createElement("h1");
+    errorElement.textContent = "Result Not Found!";
+    Left_Container.append(errorElement);
+  }
+};
+
+// <---------------------- Football news End Here----------------->
+
+// <-------------- Tennies Sports New API Call------------->
+
+document.getElementById("Tennies").addEventListener("click",F_Tennies_News);
+
+let Key_T = "39f6d3ad984f4b23905100e49c1ab97f";
+async function F_Tennies_News(){
+ 
+  try {
+
+     let response = await fetch(
+      `https://newsapi.org/v2/everything?q=Tennies&sortBy=popularity&pageSize=5&language=en&apiKey=${Key_T}`
+    );
+   
+    let data = await response.json();
+    
+    totalpages = data.length;
+    document.getElementById("Page_No").textContent = Page;
+    console.log(data.articles);
+
+    displayResults(data.articles);
+  } catch (error) {
+    console.log(error);
+    var errorElement = document.createElement("h1");
+    errorElement.textContent = "Result Not Found!";
+    Left_Container.append(errorElement);
+  }
+};
+
+// <----------------- Tennies Sport news END Here-------------->
