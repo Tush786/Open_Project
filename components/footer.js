@@ -7,7 +7,7 @@ function footer()
     return `<div id="infooter">
     <div id="div1">
         <div id="weblogo">
-            <a href="index.html"><img src="https://playo-website.gumlet.net/logo/playo-logo-footer-website.png?auto=format,compress&h=100" alt="logo" width="100%" height="100%"></a>
+            <a href="index.html"><img src="https://playo-website.gumlet.io/playo-website-v2/Logo+with+Trademark_Filled.png" alt="logo" width="100%" height="100%"></a>
         </div>
         <div id="playstore">
             <a href="https://play.google.com/store/apps/details?id=com.techmash.playo">

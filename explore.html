@@ -53,8 +53,19 @@
           <img src="https://playov2.gumlet.net//explore/Group+18%402x.png" alt="" class="icon" >
           <div class="align">
             <p class="filtertext">Sport</p>
-            <select class="bold space">
-              <option value="Select Sports">Select Sports</option>
+            <select class="bold space" id="Select_S">
+              <option value="">All</option>
+              <option value="Sports Clubs">Sports Clubs</option>
+              <option value="Badminton">Badminton</option>
+              <option value="Football">Football</option>
+              <option value="Cricket">Cricket</option>
+              <option value="Tennis">Tennis</option>
+              <option value="Table Tennis">Table Tennis</option>
+              <option value="Running">Running</option>
+              <option value="Cycling">Cycling</option>
+              <option value="Kabaddi">Kabaddi</option>
+              <option value="Baseball">Baseball</option>
+              <option value="Swimminng">Swimminng</option>
               </select>
              </div>
           
@@ -64,7 +75,12 @@
           <div class="align">
             <p class="filtertext">Categories</p>
             <select class="bold space1">
-              <option value="Select Sports">All</option>
+              <option value="">Select All</option>
+              <option value="Team Sport">Team Sport</option>
+              <option value="Racquet Sports">Racquet Sports</option>
+              <option value="Fitness">Fitness</option>
+              <option value="Recreation">Recretion</option>
+             
               </select>
           </div>
         </div>
@@ -128,8 +144,6 @@
     </div>
   </body>
 </html>
-
-
 
 <script  >
   
@@ -228,32 +242,54 @@
    
 
 
-    let my_value = JSON.parse(localStorage.getItem("name"));
-    console.log(my_value.city)
+    // let my_value = JSON.parse(localStorage.getItem("name"));
+    // console.log(my_value.city)
 
-    searchLocation();
-    //Search Function Code 
-    async function searchLocation(){
-        //Getting the value again
-        var search_value = my_value.city;
+    // searchLocation();
+    // //Search Function Code 
+    // async function searchLocation(){
+    //     //Getting the value again
+    //     var search_value = my_value.city;
+      
+
+    //     let response = await fetch("./database/activityData.json");
+    //     let data = await response.json();
+    //     console.log(data)
+    //     data.map((el)=>{
+    //       console.log(el.name)
+    //     })
+    //     //console.log(data);
+
+    //     //Writing Function for filter data based on search results
+
+    //     let filterData = data.filter((el)=>{
+    //         let regex = new RegExp(`^${search_value}`, "gi" );
+    //         return el.city.match(regex);
+    //     })
+
+    //     console.log(filterData);
+
+    //    apprndData(filterData)
+    // }
 
 
-       
+    // <----------- Try Filter----------------------------------------?
 
-        let response = await fetch("./database/activityData.json");
-        let data = await response.json();
-        //console.log(data);
+    // document.querySelectorAll(".bold space").addEventListener("change",Select_Sp);
 
-        //Writing Function for filter data based on search results
+    // function Select_Sp(){
+    //   var Sel=document.querySelectorAll(".bold space").value;
 
-        let filterData = data.filter((el)=>{
-            let regex = new RegExp(`^${search_value}`, "gi" );
-            return el.city.match(regex);
-        })
+    //   let filterData1 = data.filter((el)=>{
+    //         let regex1 = new RegExp(`^${Sel}`, "gi" );
+    //         return el.name.match(regex1);
+    //     })
 
-        console.log(filterData);
-       apprndData(filterData)
-    }
+    //     console.log(filterData1);
+
+    //    apprndData(filterData1)
+
+    // }
 
 
   //===========================================================================>
@@ -261,10 +297,54 @@
 
 
 
-   //Append Data Function 
-   function apprndData(data){
+  let my_value = JSON.parse(localStorage.getItem("name"));
+  console.log(my_value.city);
+
+  searchLocation();
+  //Search Function Code 
+  async function searchLocation() {
+    //Getting the value again
+    var search_value = my_value.city;
+
+    let response = await fetch("./database/activityData.json");
+    let data = await response.json();
+    console.log(data);
+
+    //Writing Function for filter data based on search results
+
+    let Filt_Data = data.filter((el) => {
+      let regex = new RegExp(`^${search_value}`, "gi");
+      // console.log(regex);
+      return el.city.match(regex);
+    })
+
+    document.getElementById("Select_S").addEventListener("change", () => {
+      filterData(Filt_Data);
+      console.log(Filt_Data)
+    })
+    // console.log(filterData);
+    D_Data(Filt_Data)
+  }
+
+  function filterData(arr) {
+    var Sel = document.getElementById("Select_S").value;
+    console.log(Sel)
+    console.log(arr)
+    let val = arr.filter((el) => {
+      // console.log(el.sport)
+          return el.sport===Sel;
+    })
+    D_Data(val);
+    // console.log(val);
+  };
+
+  //===========================================================================>
+
+  //Append Data Function 
+  function D_Data(data) {
+    con.innerHTML = "";
     // console.log(data)
-    data.map((el)=>{
+    data.forEach((el) => {
       let y = `  <div onclick="details(${el.id})" id= "places" class="clickdiv">
         <div>
           <img src="${el.image}" alt="" class="conimage">
@@ -276,20 +356,14 @@
         <p class="coaching">${el.name}  Coaching</p>
       </div>`;
 
-        let place = document.getElementById("place");
-        place.setAttribute("class", "bold");
-        place.innerHTML = el.city;
-        con.innerHTML += y;
-
-        
-
+      let place = document.getElementById("place");
+      place.setAttribute("class", "bold");
+      place.innerHTML = el.city;
+      con.innerHTML += y;
     })
-  
+  }
 
-   }
-
-
-   function details(x) {
+  function details(x) {
     console.log("id:", x);
     let data = {
       id: x,
@@ -297,27 +371,9 @@
 
     let location = localStorage.setItem("id", JSON.stringify(data));
     window.location.href = "detail.html";
-  }
-   
-
-
-
-   
-
-
-
-
-
-
-
+  }
 
 //Filtering array of objects from the data base End (With Debouncing Feature)
-
-
-
-
-
-
 
 
 </script>

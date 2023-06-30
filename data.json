@@ -2,6 +2,7 @@
   "cities": [
     {
       "city": "hyderabad",
+      "sport":"Cricket",
       "name": "Daniel Cricket Academy",
       "location": "hyderabad",
       "image": "https://playo-activities.gumlet.io/DANIELSCRICKETACADEMY/DanielsCricketAcademycover1502371285385.jpg?q=40",
@@ -14,6 +15,7 @@
     },
     {
       "city": "hyderabad",
+      "sport":"Cricket",
       "name": "SVM Bowling Alley Gachibowli",
       "location": "36/A, Sai Tirumala Platinum Building, Old Mumbai Hwy, Telecom Nagar Extension",
       "image": "https://playo-activities.gumlet.io/SVMBOWLINGALLEY/SVMBowlingAlleycover.jpg?q=40",
@@ -28,6 +30,7 @@
     },
     {
       "city": "hyderabad",
+      "sport":"Badminton",
       "name": "CHETAN ANAND BADMINTON ACADEMY",
       "location": "Madhapur",
       "image": "https://playo-activities.gumlet.io/CHETANANANDBADMINTONACADEMY/ChetanAnandBadmintonAcademycover1502371131832.jpg?q=40",
@@ -42,6 +45,7 @@
     },
     {
       "city": "hyderabad",
+      "sport":"Swimming",
       "name": "PRAXIS SWIMMING",
       "location": "Narayanguda",
       "image": "https://playo-activities.gumlet.io/PRAXISSWIMMING/PraxisSwimmingcover1502371803701.jpg?q=40",
@@ -56,6 +60,7 @@
     },
     {
       "city": "hyderabad",
+      "sport":"Cricket",
       "name": "INSPORTS CRICKET ACADEMY",
       "location": "Banjara Hills",
       "image": "https://playo-activities.gumlet.io/INSPORTSCRICKTACADEMY/InsportsCricketAcademycover1502371426327.jpg?q=40",
@@ -70,6 +75,7 @@
     },
     {
       "city": "hyderabad",
+      "sport":"Cricket",
       "name": "ST. JOHNS CRICKET ACADEMY",
       "location": "East Marredpally",
       "image": "https://playo-activities.gumlet.io/ST.JOHNSCRICKETACADEMY/StJohnsCricketAcademycover1502371361943.jpg?q=40",
@@ -84,6 +90,7 @@
     },
     {
       "city": "hyderabad",
+      "sport":"Cricket",
       "name": "RAJU'S CRICKET COACHING ACADEMY",
       "location": "Sri Nagar Colony",
       "image": "https://playo-activities.gumlet.io/RAJUSCRICKETCOACHINGACADEMY/RajusCricketCoachingacademycover1502371488749.jpg?q=40",
@@ -98,6 +105,7 @@
     },
     {
       "city": "hyderabad",
+      "sport":"Cricket",
       "name": "VVS SPORTS ACADEMY",
       "location": "Moinabad",
       "image": "https://playo-activities.gumlet.io/VVSSPORTSACADEMY/VVSSportsAcademycover1502371222509.jpg?q=40",
@@ -112,6 +120,7 @@
     },
     {
       "city": "delhi",
+      "sport":"Cricket",
       "name": "WEST DELHI CRICKET ACADEMY",
       "location": "1A-2 Block, St. Sophia School, Paschim Vihar, New Delhi, Delhi 110063",
       "image": "https://playo-activities.gumlet.io/WESTDELHICRICKETACADEMY/WestDelhiCricketAcademycover1509333363895.jpg?q=40",
@@ -126,6 +135,7 @@
     },
     {
       "city": "delhi",
+      "sport":"Cricket",
       "name": "DRONACHARYA CRICKET FOUNDATION",
       "location": "Near Hanuman Balaji Mandir, Vivek Vihar, New Delhi, Delhi 110092",
       "image": "https://playo-activities.gumlet.io/DRONACHARYACRICKETFOUNDATION/DronacharyaCricketFoundationcover1509334189090.jpg?q=40",
@@ -140,6 +150,7 @@
     },
     {
       "city": "delhi",
+      "sport":"Cricket",
       "name": "SEHWAG CRICKET ACADEMY",
       "location": "X-12, Hauz Khas Road, Hauz Khas Main Market, New Delhi, Delhi 110016",
       "image": "https://playo-activities.gumlet.io/SEHWAGCRICKETACADEMY/SehwagCricketAcademycover1509335108795.jpg?q=40",
@@ -154,6 +165,7 @@
     },
     {
       "city": "delhi",
+      "sport":"Cricket",
       "name": "MADAN LAL CRICKET ACADEMY",
       "location": "DDA Siri Fort Sports Complex, August Kranti Marg, Khelgaon, Behind Siri Fort Auditorium, New Delhi, Delhi 110049",
       "image": "https://playo-activities.gumlet.io/GYANTICRICKETCOACHING/GyantiCricketCoachingcover1509432145244.jpg?q=40",
@@ -168,6 +180,7 @@
     },
     {
       "city": "delhi",
+      "sport":"Cricket",
       "name": "HARBEER CRICKET ACADEMY",
       "location": "Opp.Japanese Park, Sector 9, Rohini west, Delhi, 110085",
       "image": "https://playo-activities.gumlet.io/HARBEERCRICKETACADEMY/HarbeerCricketAcademycover1509431328272.jpg?q=40",
@@ -182,6 +195,7 @@
     },
     {
       "city": "delhi",
+      "sport":"Football",
       "name": "EXTRA TIME FOOTBALL ACADEMY",
       "location": "Vasant Vatika, Opposite DPS Vasant Kunj, New Delhi, Delhi 110070",
       "image": "https://playo-activities.gumlet.io/EXTRATIMEFOOTBALLACADEMY/ExtraTimeFootballAcademycover1509432907532.jpg?q=40",
@@ -196,6 +210,7 @@
     },
     {
       "city": "delhi",
+      "sport":"Football",
       "name": "FCBESCOLA FOOTBALL SCHOOL - WEST DELHI",
       "location": "Shivaji College Sports Complex iOS Maidan, Shivaji Enclave, Tagore Garden Extension, New Delhi, Delhi 110018",
       "image": "https://playo-activities.gumlet.io/FCBESCOLAFOOTBALLSCHOOL-WESTDELHI/FCBEscolaFootballSchoolWestDelhicover1509433782873.jpg?q=40",
@@ -210,6 +225,7 @@
     },
     {
       "city": "delhi",
+      "sport":"Football",
       "name": "PHOENIX FOOTBALL ACADEMY",
       "location": "DDA Sports Complex, Muni Maya Ram Jain Marg, Pitampura, Delhi, 110034",
       "image": "https://playo-activities.gumlet.io/PHOENIXFOOTBALLACADEMY/PhoenixFootballAcademycover1509435605936.jpg?q=40",
@@ -224,6 +240,7 @@
     },
     {
       "city": "pune",
+      "sport":"Cricket",
       "name": "TWENTY2YARDS CRICKET ACADEMY",
       "location": "r.No. 52/C, Dagade-Patil Nagar, Opp. Pinnacle Brookside, Mumbai-Bangalore Bypass Highway, Bavdhan Khurd, Pune, Maharashtra 411021",
       "image": "https://playo-activities.gumlet.io/TWENTY2YARDSCRICKETACADEMY/Twenty2yardsCricketAcademycover1509875258551.jpg?q=40",
@@ -238,6 +255,7 @@
     },
     {
       "city": "pune",
+      "sport":"Cricket",
       "name": "ARYANS CRICKET ACADEMY",
       "location": "Mulberry Gardens, Opp Laxmi Lawns, Magarpatta City, Hadapsar, Pune, Maharashtra 411028",
       "image": "https://playo-activities.gumlet.io/TWENTY2YARDSCRICKETACADEMY/Twenty2yardsCricketAcademycover1509875258551.jpg?q=40",
@@ -252,6 +270,7 @@
     },
     {
       "city": "pune",
+      "sport":"Sports Clubs",
       "name": "SPORTS GALAXY TILEKAR SPORTS ACADEMY",
       "location": "Mulberry Gardens, Opp Laxmi Lawns, Magarpatta City, Hadapsar, Pune, Maharashtra 411028",
       "image": "https://playo-activities.gumlet.io/TWENTY2YARDSCRICKETACADEMY/Twenty2yardsCricketAcademycover1509875258551.jpg?q=40",
@@ -266,6 +285,7 @@
     },
     {
       "city": "pune",
+      "sport":"Sports Clubs",
       "name": "PYC HINDU GYMKHANA",
       "location": "CTS No. 766, F.P. No. 244, Bhandarkar Road, Pune, Maharashtra 411004",
       "image": "https://playo-activities.gumlet.io/PYCHINDUGYMKHANA/PYCHinduGymkhanacover1509901942899.jpg?q=40",
@@ -280,6 +300,7 @@
     },
     {
       "city": "pune",
+      "sport":"Sports Clubs",
       "name": "SANJAY SPORTS ACADEMY",
       "location": "19/1b/1, Near Hotel Rajwada, BanerRoad, Someshwarwadi, Pune, Maharashtra 411008",
       "image": "https://playo-activities.gumlet.io/SANJAYSPORTSACADEMY/SanjaySportsAcademycover1510047492354.jpg?q=40",
@@ -294,6 +315,7 @@
     },
     {
       "city": "pune",
+      "sport":"Sports Clubs",
       "name": "SILVER SPORTS CLUB",
       "location": "165/1, 166/5 , Near by Mumbai-Bangalore Highway, Behind Vedanta Society ,, Wakad,, Shankar Kalat Nagar, Wakad, Pune, Maharashtra 411057",
       "image": "https://playo-activities.gumlet.io/SANJAYSPORTSACADEMY/SanjaySportsAcademycover1510047492354.jpg?q=40",
@@ -307,7 +329,8 @@
       "id": 22
     },
     {
-      "city": "mumbai",
+      "city": "Mumbai",
+      "sport":"Cricket",
       "name": "SANJEEVANI CRICKET ACADEMY",
       "location": "Bandra East",
       "image": "https://playo-activities.gumlet.io/SANJEEVANICRICKETACADEMY/SanjeevaniCricketAcademycover1508259425818.jpg?q=40",
@@ -321,7 +344,8 @@
       "id": 23
     },
     {
-      "city": "mumbai",
+      "city": "Mumbai",
+      "sport":"Cricket",
       "name": "MUMBAI CRICKET ASSOCIATION INDOOR CRICKET ACADEMY",
       "location": "Bandra East",
       "image": "https://playo-activities.gumlet.io/TWENTY2YARDSCRICKETACADEMY/Twenty2yardsCricketAcademycover1509875258551.jpg?q=40",
@@ -335,7 +359,8 @@
       "id": 24
     },
     {
-      "city": "mumbai",
+      "city": "Mumbai",
+      "sport":"Cricket",
       "name": "GLOBAL CRICKET SCHOOL",
       "location": "508, Neelkanth, 98, Marine Drive, Churchgate, Mumbai, Maharashtra",
       "image": "https://playo-activities.gumlet.io/PYCHINDUGYMKHANA/PYCHinduGymkhanacover1509901942899.jpg?q=40",
@@ -349,7 +374,8 @@
       "id": 25
     },
     {
-      "city": "mumbai",
+      "city": "Mumbai",
+      "sport":"Sports Clubs",
       "name": "SHIVAJI PARK GYMKHANA",
       "location": "Keluskar Road South, Shivaji Park, Dadar West, Mumbai, Maharashtra",
       "image": "https://playo-activities.gumlet.io/TWENTY2YARDSCRICKETACADEMY/Twenty2yardsCricketAcademycover1509875258551.jpg?q=40",
@@ -363,7 +389,8 @@
       "id": 26
     },
     {
-      "city": "mumbai",
+      "city": "Mumbai",
+      "sport":"Sports Clubs",
       "name": "VIDYA PARADKAR ACADEMY",
       "location": "c/o Vidyadhar Paradkar 264, Bhadkamkar Marg 16, Pannalal Terraces, Mumbai, Maharashtra",
       "image": "https://playo-activities.gumlet.io/SANJEEVANICRICKETACADEMY/SanjeevaniCricketAcademycover1508259425818.jpg?q=40",
@@ -377,7 +404,8 @@
       "id": 27
     },
     {
-      "city": "mumbai",
+      "city": "Mumbai",
+      "sport":"Swimming",
       "name": "OCEAN SWIMMING ACADEMY",
       "location": "201 G12, Navjeevan Co-Op Soc, Sangharsh Nagar, Chandivali, Near Sakinaka Nahar Amrit Shakti, Andhieri (East), Mumbai, Maharashtra 400072",
       "image": "https://playo-activities.gumlet.io/OCEANSWIMMINGACADEMY/OceanSwimmingAcademycover1508868127434.jpg?q=40",
@@ -392,6 +420,7 @@
     },
     {
       "city": "kolkata",
+      "sport":"Football",
       "name": "FOOTBALL TOURNAMENT",
       "location": "Indian Statistical Institute, 205 B.T. Road, Kolkata, West Bengal, India",
       "image": "https://playo-activities.gumlet.io/FOOTBALLTOURNAMENT/FootballTournamentcover.PNG?q=40",
@@ -406,6 +435,7 @@
     },
     {
       "city": "kolkata",
+      "sport":"Cricket",
       "name": "CALCUTTA CRICKET ACADEMY",
       "location": "Southern Ave, Lake Gardens, Vivekananda Park (est) Ground, Hemanta Mukherjee Sarani, lake Terrace, Ballygunge, Kolkata, West Bengal 700029",
       "image": "https://playo-activities.gumlet.io/GULLYCRICKET/GullyCricketcover.PNG?q=40",
@@ -417,6 +447,1505 @@
       "infrastructure": "",
       "address": "",
       "id": 30
+    }
+  ],
+  "city-name":[
+    {
+      "name": "Adilabad"
+    },
+    {
+      "name": "Anantapur"
+    },
+    {
+      "name": "Chittoor"
+    },
+    {
+      "name": "Kakinada"
+    },
+    {
+      "name": "Guntur"
+    },
+    {
+      "name": "Hyderabad"
+    },
+    {
+      "name": "Karimnagar"
+    },
+    {
+      "name": "Khammam"
+    },
+    {
+      "name": "Krishna"
+    },
+    {
+      "name": "Kurnool"
+    },
+    {
+      "name": "Mahbubnagar"
+    },
+    {
+      "name": "Medak"
+    },
+    {
+      "name": "Nalgonda"
+    },
+    {
+      "name": "Nizamabad"
+    },
+    {
+      "name": "Ongole"
+    },
+    {
+      "name": "Hyderabad"
+    },
+    {
+      "name": "Srikakulam"
+    },
+    {
+      "name": "Nellore"
+    },
+    {
+      "name": "Visakhapatnam"
+    },
+    {
+      "name": "Vizianagaram"
+    },
+    {
+      "name": "Warangal"
+    },
+    {
+      "name": "Eluru"
+    },
+    {
+      "name": "Anjaw"
+    },
+    {
+      "name": "Kadapa"
+    },
+    {
+      "name": "Changlang"
+    },
+    {
+      "name": "East Siang"
+    },
+    {
+      "name": "Kurung Kumey"
+    },
+    {
+      "name": "Lohit"
+    },
+    {
+      "name": "Lower Dibang Valley"
+    },
+    {
+      "name": "Lower Subansiri"
+    },
+    {
+      "name": "Papum Pare"
+    },
+    {
+      "name": "Tawang"
+    },
+    {
+      "name": "Tirap"
+    },
+    {
+      "name": "Dibang Valley"
+    },
+    {
+      "name": "Upper Siang"
+    },
+    {
+      "name": "Upper Subansiri"
+    },
+    {
+      "name": "West Kameng"
+    },
+    {
+      "name": "West Siang','Baksa"
+    },
+    {
+      "name": "Barpeta"
+    },
+    {
+      "name": "Bongaigaon"
+    },
+    {
+      "name": "Cachar"
+    },
+    {
+      "name": "Chirang"
+    },
+    {
+      "name": "Darrang"
+    },
+    {
+      "name": "Dhemaji"
+    },
+    {
+      "name": "Dima Hasao"
+    },
+    {
+      "name": "Dhubri"
+    },
+    {
+      "name": "Dibrugarh"
+    },
+    {
+      "name": "Goalpara"
+    },
+    {
+      "name": "Golaghat"
+    },
+    {
+      "name": "Hailakandi"
+    },
+    {
+      "name": "Jorhat"
+    },
+    {
+      "name": "Kamrup"
+    },
+    {
+      "name": "Kamrup Metropolitan"
+    },
+    {
+      "name": "Karbi Anglong"
+    },
+    {
+      "name": "Karimganj"
+    },
+    {
+      "name": "Kokrajhar"
+    },
+    {
+      "name": "Lakhimpur"
+    },
+    {
+      "name": "Marigaon"
+    },
+    {
+      "name": "Nagaon"
+    },
+    {
+      "name": "Nalbari"
+    },
+    {
+      "name": "Sibsagar"
+    },
+    {
+      "name": "Sonitpur"
+    },
+    {
+      "name": "Tinsukia"
+    },
+    {
+      "name": "Udalguri"
+    },
+    {
+      "name": "Araria"
+    },
+    {
+      "name": "Arwal"
+    },
+    {
+      "name": "Aurangabad"
+    },
+    {
+      "name": "Banka"
+    },
+    {
+      "name": "Begusarai"
+    },
+    {
+      "name": "Bhagalpur"
+    },
+    {
+      "name": "Bhojpur"
+    },
+    {
+      "name": "Buxar"
+    },
+    {
+      "name": "Darbhanga"
+    },
+    {
+      "name": "East Champaran"
+    },
+    {
+      "name": "Gaya"
+    },
+    {
+      "name": "Gopalganj"
+    },
+    {
+      "name": "Jamui"
+    },
+    {
+      "name": "Jehanabad"
+    },
+    {
+      "name": "Kaimur"
+    },
+    {
+      "name": "Katihar"
+    },
+    {
+      "name": "Khagaria"
+    },
+    {
+      "name": "Kishanganj"
+    },
+    {
+      "name": "Lakhisarai"
+    },
+    {
+      "name": "Madhepura"
+    },
+    {
+      "name": "Madhubani"
+    },
+    {
+      "name": "Munger"
+    },
+    {
+      "name": "Muzaffarpur"
+    },
+    {
+      "name": "Nalanda"
+    },
+    {
+      "name": "Nawada"
+    },
+    {
+      "name": "Patna"
+    },
+    {
+      "name": "Purnia"
+    },
+    {
+      "name": "Rohtas"
+    },
+    {
+      "name": "Saharsa"
+    },
+    {
+      "name": "Samastipur"
+    },
+    {
+      "name": "Saran"
+    },
+    {
+      "name": "Sheikhpura"
+    },
+    {
+      "name": "Sheohar"
+    },
+    {
+      "name": "Sitamarhi"
+    },
+    {
+      "name": "Siwan"
+    },
+    {
+      "name": "Supaul"
+    },
+    {
+      "name": "Vaishali"
+    },
+    {
+      "name": "West Champaran"
+    },
+    {
+      "name": "Chandigarh"
+    },
+    {
+      "name": "Bastar"
+    },
+    {
+      "name": "Bijapur"
+    },
+    {
+      "name": "Bilaspur"
+    },
+    {
+      "name": "Dantewada"
+    },
+    {
+      "name": "Dhamtari"
+    },
+    {
+      "name": "Durg"
+    },
+    {
+      "name": "Jashpur"
+    },
+    {
+      "name": "Janjgir-Champa"
+    },
+    {
+      "name": "Korba"
+    },
+    {
+      "name": "Koriya"
+    },
+    {
+      "name": "Kanker"
+    },
+    {
+      "name": "Kabirdham (Kawardha)"
+    },
+    {
+      "name": "Mahasamund"
+    },
+    {
+      "name": "Narayanpur"
+    },
+    {
+      "name": "Raigarh"
+    },
+    {
+      "name": "Rajnandgaon"
+    },
+    {
+      "name": "Raipur"
+    },
+    {
+      "name": "Surguja"
+    },
+    {
+      "name": "Dadra and Nagar Haveli"
+    },
+    {
+      "name": "New Delhi"
+    },
+    {
+      "name":"Ahmedabad"
+    },
+    {
+      "name": "Amreli district"
+    },
+    {
+      "name": "Anand"
+    },
+    {
+      "name": "Banaskantha"
+    },
+    {
+      "name": "Bharuch"
+    },
+    {
+      "name": "Bhavnagar"
+    },
+    {
+      "name": "Dahod"
+    },
+    {
+      "name": "The Dangs"
+    },
+    {
+      "name": "Gandhinagar"
+    },
+    {
+      "name": "Jamnagar"
+    },
+    {
+      "name": "Junagadh"
+    },
+    {
+      "name": "Kutch"
+    },
+    {
+      "name": "Kheda"
+    },
+    {
+      "name": "Mehsana"
+    },
+    {
+      "name": "Narmada"
+    },
+    {
+      "name": "Navsari"
+    },
+    {
+      "name": "Patan"
+    },
+    {
+      "name": "Panchmahal"
+    },
+    {
+      "name": "Porbandar"
+    },
+    {
+      "name": "Rajkot"
+    },
+    {
+      "name": "Sabarkantha"
+    },
+    {
+      "name": "Surendranagar"
+    },
+    {
+      "name": "Surat"
+    },
+    {
+      "name": "Vyara"
+    },
+    {
+      "name": "Vadodara"
+    },
+    {
+      "name": "Valsad"
+    },
+    {
+      "name": "Ambala"
+    },
+    {
+      "name": "Bhiwani"
+    },
+    {
+      "name": "Faridabad"
+    },
+    {
+      "name": "Fatehabad"
+    },
+    {
+      "name": "Gurgaon"
+    },
+    {
+      "name": "Hissar"
+    },
+    {
+      "name": "Jhajjar"
+    },
+    {
+      "name": "Jind"
+    },
+    {
+      "name": "Karnal"
+    },
+    {
+      "name": "Kaithal"
+    },
+    {
+      "name": "Kurukshetra"
+    },
+    {
+      "name": "Mahendragarh"
+    },
+    {
+      "name": "Mewat"
+    },
+    {
+      "name": "Palwal"
+    },
+    {
+      "name": "Panchkula"
+    },
+    {
+      "name": "Panipat"
+    },
+    {
+      "name": "Rewari"
+    },
+    {
+      "name": "Rohtak"
+    },
+    {
+      "name": "Sirsa"
+    },
+    {
+      "name": "Sonipat"
+    },
+    {
+      "name": "Yamuna Nagar"
+    },
+    {
+      "name": "Bilaspur"
+    },
+    {
+      "name": "Chamba"
+    },
+    {
+      "name": "Hamirpur"
+    },
+    {
+      "name": "Kangra"
+    },
+    {
+      "name": "Kinnaur"
+    },
+    {
+      "name": "Kullu"
+    },
+    {
+      "name": "Lahaul and Spiti"
+    },
+    {
+      "name": "Mandi"
+    },
+    {
+      "name": "Shimla"
+    },
+    {
+      "name": "Sirmaur"
+    },
+    {
+      "name": "Solan"
+    },
+    {
+      "name": "Anantnag"
+    },
+    {
+      "name": "Una"
+    },
+    {
+      "name": "Badgam"
+    },
+    {
+      "name": "Bandipora"
+    },
+    {
+      "name": "Baramulla"
+    },
+    {
+      "name": "Doda"
+    },
+    {
+      "name": "Ganderbal"
+    },
+    {
+      "name": "Jammu"
+    },
+    {
+      "name": "Kargil"
+    },
+    {
+      "name": "Kathua"
+    },
+    {
+      "name": "Kishtwar"
+    },
+    {
+      "name": "Kupwara"
+    },
+    {
+      "name": "Kulgam"
+    },
+    {
+      "name": "Leh"
+    },
+    {
+      "name": "Poonch"
+    },
+    {
+      "name": "Pulwama"
+    },
+    {
+      "name": "Rajauri"
+    },
+    {
+      "name": "Ramban"
+    },
+    {
+      "name": "Reasi"
+    },
+    {
+      "name": "Samba"
+    },
+    {
+      "name": "Shopian"
+    },
+    {
+      "name": "Srinagar"
+    },
+    {
+      "name": "Bokaro"
+    },
+    {
+      "name": "Udhampur"
+    },
+    {
+      "name": "Chatra"
+    },
+    {
+      "name": "Deoghar"
+    },
+    {
+      "name": "Dhanbad"
+    },
+    {
+      "name": "Dumka"
+    },
+    {
+      "name": "East Singhbhum"
+    },
+    {
+      "name": "Garhwa"
+    },
+    {
+      "name": "Giridih"
+    },
+    {
+      "name": "Godda"
+    },
+    {
+      "name": "Gumla"
+    },
+    {
+      "name": "Hazaribag"
+    },
+    {
+      "name": "Jamtara"
+    },
+    {
+      "name": "Khunti"
+    },
+    {
+      "name": "Koderma"
+    },
+    {
+      "name": "Latehar"
+    },
+    {
+      "name": "Lohardaga"
+    },
+    {
+      "name": "Pakur"
+    },
+    {
+      "name": "Palamu"
+    },
+    {
+      "name": "Ramgarh"
+    },
+    {
+      "name": "Ranchi"
+    },
+    {
+      "name": "Sahibganj"
+    },
+    {
+      "name": "Seraikela Kharsawan"
+    },
+    {
+      "name": "Simdega"
+    },
+    {
+      "name": "West Singhbhum"
+    },
+    {
+      "name": "Bagalkot"
+    },
+    {
+      "name": "Bangalore Rural"
+    },
+    {
+      "name": "Bangalore Urban"
+    },
+    {
+      "name": "Belgaum"
+    },
+    {
+      "name": "Bellary"
+    },
+    {
+      "name": "Bidar"
+    },
+    {
+      "name": "Bijapur"
+    },
+    {
+      "name": "Chamarajnagar"
+    },
+    {
+      "name": "Chikkamagaluru"
+    },
+    {
+      "name": "Chikkaballapur"
+    },
+    {
+      "name": "Chitradurga"
+    },
+    {
+      "name": "Davanagere"
+    },
+    {
+      "name": "Dharwad"
+    },
+    {
+      "name": "Dakshina Kannada"
+    },
+    {
+      "name": "Gadag"
+    },
+    {
+      "name": "Gulbarga"
+    },
+    {
+      "name": "Hassan"
+    },
+    {
+      "name": "Haveri district"
+    },
+    {
+      "name": "Kodagu"
+    },
+    {
+      "name": "Kolar"
+    },
+    {
+      "name": "Koppal"
+    },
+    {
+      "name": "Mandya"
+    },
+    {
+      "name": "Mysore"
+    },
+    {
+      "name": "Raichur"
+    },
+    {
+      "name": "Shimoga"
+    },
+    {
+      "name": "Tumkur"
+    },
+    {
+      "name": "Udupi"
+    },
+    {
+      "name": "Uttara Kannada"
+    },
+    {
+      "name": "Ramanagara"
+    },
+    {
+      "name": "Alappuzha"
+    },
+    {
+      "name": "Yadgir"
+    },
+    {
+      "name": "Ernakulam"
+    },
+    {
+      "name": "Idukki"
+    },
+    {
+      "name": "Kannur"
+    },
+    {
+      "name": "Kasaragod"
+    },
+    {
+      "name": "Kollam"
+    },
+    {
+      "name": "Kottayam"
+    },
+    {
+      "name": "Kozhikode"
+    },
+    {
+      "name": "Malappuram"
+    },
+    {
+      "name": "Palakkad"
+    },
+    {
+      "name": "Pathanamthitta"
+    },
+    {
+      "name": "Thrissur"
+    },
+    {
+      "name": "Thiruvananthapuram"
+    },
+    {
+      "name": "WAlirajpur"
+    },
+    {
+      "name": "Wayanad"
+    },
+    {
+      "name": "Anuppur"
+    },
+    {
+      "name": "Ashok Nagar"
+    },
+    {
+      "name": "Balaghat"
+    },
+    {
+      "name": "Barwani"
+    },
+    {
+      "name": "Betul"
+    },
+    {
+      "name": "Bhind"
+    },
+    {
+      "name": "Bhopal"
+    },
+    {
+      "name": "Burhanpur"
+    },
+    {
+      "name": "Chhatarpur"
+    },
+    {
+      "name": "Chhindwara"
+    },
+    {
+      "name": "Damoh"
+    },
+    {
+      "name": "Datia"
+    },
+    {
+      "name": "Dewas"
+    },
+    {
+      "name": "Dhar"
+    },
+    {
+      "name": "Dindori"
+    },
+    {
+      "name": "Guna"
+    },
+    {
+      "name": "Gwalior"
+    },
+    {
+      "name": "Harda"
+    },
+    {
+      "name": "Hoshangabad"
+    },
+    {
+      "name": "Indore"
+    },
+    {
+      "name": "Jabalpur"
+    },
+    {
+      "name": "Jhabua"
+    },
+    {
+      "name": "Katni"
+    },
+    {
+      "name": "Khandwa (East Nimar)"
+    },
+    {
+      "name": "Khargone (West Nimar)"
+    },
+    {
+      "name": "Mandla"
+    },
+    {
+      "name": "Mandsaur"
+    },
+    {
+      "name": "Morena"
+    },
+    {
+      "name": "Narsinghpur"
+    },
+    {
+      "name": "Neemuch"
+    },
+    {
+      "name": "Panna"
+    },
+    {
+      "name": "Rewa"
+    },
+    {
+      "name": "Rajgarh"
+    },
+    {
+      "name": "Ratlam"
+    },
+    {
+      "name": "Raisen"
+    },
+    {
+      "name": "Sagar"
+    },
+    {
+      "name": "Satna"
+    },
+    {
+      "name": "Sehore"
+    },
+    {
+      "name": "Seoni"
+    },
+    {
+      "name": "Shahdol"
+    },
+    {
+      "name": "Shajapur"
+    },
+    {
+      "name": "Sheopur"
+    },
+    {
+      "name": "Shivpuri"
+    },
+    {
+      "name": "Sidhi"
+    },
+    {
+      "name": "Singrauli"
+    },
+    {
+      "name": "Tikamgarh"
+    },
+    {
+      "name": "Ujjain"
+    },
+    {
+      "name": "Umaria"
+    },
+    {
+      "name": "Vidisha"
+    },
+    {
+      "name":"Ahmednagar"
+    },
+    {
+      "name": "Akola"
+    },
+    {
+      "name": "Amravati"
+    },
+    {
+      "name": "Aurangabad"
+    },
+    {
+      "name": "Bhandara"
+    },
+    {
+      "name": "Beed"
+    },
+    {
+      "name": "Buldhana"
+    },
+    {
+      "name": "Chandrapur"
+    },
+    {
+      "name": "Dhule"
+    },
+    {
+      "name": "Gadchiroli"
+    },
+    {
+      "name": "Gondia"
+    },
+    {
+      "name": "Hingoli"
+    },
+    {
+      "name": "Jalgaon"
+    },
+    {
+      "name": "Jalna"
+    },
+    {
+      "name": "Kolhapur"
+    },
+    {
+      "name": "Latur"
+    },
+    {
+      "name": "Mumbai"
+    },
+    {
+      "name": "Mumbai suburban"
+    },
+    {
+      "name": "Nandurbar"
+    },
+    {
+      "name": "Nanded"
+    },
+    {
+      "name": "Nagpur"
+    },
+    {
+      "name": "Nashik"
+    },
+    {
+      "name": "Osmanabad"
+    },
+    {
+      "name": "Parbhani"
+    },
+    {
+      "name": "Pune"
+    },
+    {
+      "name": "Raigad"
+    },
+    {
+      "name": "Ratnagiri"
+    },
+    {
+      "name": "Sindhudurg"
+    },
+    {
+      "name": "Sangli"
+    },
+    {
+      "name": "Solapur"
+    },
+    {
+      "name": "Satara"
+    },
+    {
+      "name": "Thane"
+    },
+    {
+      "name": "Wardha"
+    },
+    {
+      "name": "Washim"
+    },
+    {
+      "name": "Yavatmal"
+    },
+    {
+      "name": "Amritsar"
+    },
+    {
+      "name": "Barnala"
+    },
+    {
+      "name": "Bathinda"
+    },
+    {
+      "name": "Firozpur"
+    },
+    {
+      "name": "Faridkot"
+    },
+    {
+      "name": "Fatehgarh Sahib"
+    },
+    {
+      "name": "Fazilka"
+    },
+    {
+      "name": "Gurdaspur"
+    },
+    {
+      "name": "Hoshiarpur"
+    },
+    {
+      "name": "Jalandhar"
+    },
+    {
+      "name": "Kapurthala"
+    },
+    {
+      "name": "Ludhiana"
+    },
+    {
+      "name": "Mansa"
+    },
+    {
+      "name": "Moga"
+    },
+    {
+      "name": "Sri Muktsar Sahib"
+    },
+    {
+      "name": "Pathankot"
+    },
+    {
+      "name": "Patiala"
+    },
+    {
+      "name": "Rupnagar"
+    },
+    {
+      "name": "Ajitgarh (Mohali)"
+    },
+    {
+      "name": "Sangrur"
+    },
+    {
+      "name": "Nawanshahr"
+    },
+    {
+      "name": "Tarn Taran"
+    },
+    {
+      "name": "Ajmer"
+    },
+    {
+      "name": "Alwar"
+    },
+    {
+      "name": "Bikaner"
+    },
+    {
+      "name": "Barmer"
+    },
+    {
+      "name": "Banswara"
+    },
+    {
+      "name": "Bharatpur"
+    },
+    {
+      "name": "Baran"
+    },
+    {
+      "name": "Bundi"
+    },
+    {
+      "name": "Bhilwara"
+    },
+    {
+      "name": "Churu"
+    },
+    {
+      "name": "Chittorgarh"
+    },
+    {
+      "name": "Dausa"
+    },
+    {
+      "name": "Dholpur"
+    },
+    {
+      "name": "Dungapur"
+    },
+    {
+      "name": "Ganganagar"
+    },
+    {
+      "name": "Hanumangarh"
+    },
+    {
+      "name": "Jhunjhunu"
+    },
+    {
+      "name": "Jalore"
+    },
+    {
+      "name": "Jodhpur"
+    },
+    {
+      "name": "Jaipur"
+    },
+    {
+      "name": "Jaisalmer"
+    },
+    {
+      "name": "Jhalawar"
+    },
+    {
+      "name": "Karauli"
+    },
+    {
+      "name": "Kota"
+    },
+    {
+      "name": "Nagaur"
+    },
+    {
+      "name": "Pali"
+    },
+    {
+      "name": "Pratapgarh"
+    },
+    {
+      "name": "Rajsamand"
+    },
+    {
+      "name": "Sikar"
+    },
+    {
+      "name": "Sawai Madhopur"
+    },
+    {
+      "name": "Sirohi"
+    },
+    {
+      "name": "Tonk"
+    },
+    {
+      "name": "Udaipur"
+    },
+    {
+      "name": "Agra"
+    },
+    {
+      "name": "Allahabad"
+    },
+    {
+      "name": "Aligarh"
+    },
+    {
+      "name": "Ambedkar Nagar"
+    },
+    {
+      "name": "Auraiya"
+    },
+    {
+      "name": "Azamgarh"
+    },
+    {
+      "name": "Barabanki"
+    },
+    {
+      "name": "Budaun"
+    },
+    {
+      "name": "Bagpat"
+    },
+    {
+      "name": "Bahraich"
+    },
+    {
+      "name": "Bijnor"
+    },
+    {
+      "name": "Ballia"
+    },
+    {
+      "name": "Banda"
+    },
+    {
+      "name": "Balrampur"
+    },
+    {
+      "name": "Bareilly"
+    },
+    {
+      "name": "Basti"
+    },
+    {
+      "name": "Bulandshahr"
+    },
+    {
+      "name": "Chandauli"
+    },
+    {
+      "name": "Chhatrapati Shahuji Maharaj Nagar"
+    },
+    {
+      "name": "Chitrakoot"
+    },
+    {
+      "name": "Deoria"
+    },
+    {
+      "name": "Etah"
+    },
+    {
+      "name": "Kanshi Ram Nagar"
+    },
+    {
+      "name": "Etawah"
+    },
+    {
+      "name": "Firozabad"
+    },
+    {
+      "name": "Farrukhabad"
+    },
+    {
+      "name": "Fatehpur"
+    },
+    {
+      "name": "Faizabad"
+    },
+    {
+      "name": "Gautam Buddh Nagar"
+    },
+    {
+      "name": "Gonda"
+    },
+    {
+      "name": "Ghazipur"
+    },
+    {
+      "name": "Gorakhpur"
+    },
+    {
+      "name": "Ghaziabad"
+    },
+    {
+      "name": "Hamirpur"
+    },
+    {
+      "name": "Hardoi"
+    },
+    {
+      "name": "Mahamaya Nagar"
+    },
+    {
+      "name": "Jhansi"
+    },
+    {
+      "name": "Jalaun"
+    },
+    {
+      "name": "Jyotiba Phule Nagar"
+    },
+    {
+      "name": "Jaunpur district"
+    },
+    {
+      "name": "Ramabai Nagar (Kanpur Dehat)"
+    },
+    {
+      "name": "Kannauj"
+    },
+    {
+      "name": "Kanpur"
+    },
+    {
+      "name": "Kaushambi"
+    },
+    {
+      "name": "Kushinagar"
+    },
+    {
+      "name": "Lalitpur"
+    },
+    {
+      "name": "Lakhimpur Kheri"
+    },
+    {
+      "name": "Lucknow"
+    },
+    {
+      "name": "Mau"
+    },
+    {
+      "name": "Meerut"
+    },
+    {
+      "name": "Maharajganj"
+    },
+    {
+      "name": "Mahoba"
+    },
+    {
+      "name": "Mirzapur"
+    },
+    {
+      "name": "Moradabad"
+    },
+    {
+      "name": "Mainpuri"
+    },
+    {
+      "name": "Mathura"
+    },
+    {
+      "name": "Muzaffarnagar"
+    },
+    {
+      "name": "Panchsheel Nagar district (Hapur)"
+    },
+    {
+      "name": "Pilibhit"
+    },
+    {
+      "name": "Shamli"
+    },
+    {
+      "name": "Pratapgarh"
+    },
+    {
+      "name": "Rampur"
+    },
+    {
+      "name": "Raebareli"
+    },
+    {
+      "name": "Saharanpur"
+    },
+    {
+      "name": "Sitapur"
+    },
+    {
+      "name": "Shahjahanpur"
+    },
+    {
+      "name": "Sant Kabir Nagar"
+    },
+    {
+      "name": "Siddharthnagar"
+    },
+    {
+      "name": "Sonbhadra"
+    },
+    {
+      "name": "Sant Ravidas Nagar"
+    },
+    {
+      "name": "Sultanpur"
+    },
+    {
+      "name": "Shravasti"
+    },
+    {
+      "name": "Unnao"
+    },
+    {
+      "name": "Almora"
+    },
+    {
+      "name": "Varanasi"
+    },
+    {
+      "name": "Bageshwar"
+    },
+    {
+      "name": "Chamoli"
+    },
+    {
+      "name": "Champawat"
+    },
+    {
+      "name": "Dehradun"
+    },
+    {
+      "name": "Haridwar"
+    },
+    {
+      "name": "Nainital"
+    },
+    {
+      "name": "Pauri Garhwal"
+    },
+    {
+      "name": "Pithoragarh"
+    },
+    {
+      "name": "Rudraprayag"
+    },
+    {
+      "name": "Tehri Garhwal"
+    },
+    {
+      "name": "Udham Singh Nagar"
+    },
+    {
+      "name": "Uttarkashi"
     }
   ]
 }
