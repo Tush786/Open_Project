@@ -1,6 +1,11 @@
 
 //Login and pop up full functionalities start
 
+import footer from "../components/footer.js";
+
+let Nav=document.getElementById("Footer_Container");
+Nav.innerHTML=footer();
+
 document.querySelector("#logo").addEventListener("click", ()=>{
     window.location.href = "index.html";
 })
@@ -167,46 +172,68 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
   //===========================================================================>
 
-  let id;
+//   let id;
 
   //Creating Debouncing Function
-  function debouncingFunction(fetchFunction , delay){
+//   function debouncingFunction(fetchFunction , delay){
 
-    if(inputTag.value.length == 0){
-        document.querySelector("#show-results-div").style.visibility='hidden'
-    }
+//     if(inputTag.value.length == 0){
+//         document.querySelector("#show-results-div").style.visibility='hidden'
+//     }
 
-    if(id){
-        clearTimeout(id);
-    }
+//     if(id){
+//         clearTimeout(id);
+//     }
 
-    id = setTimeout(()=>{
-        fetchFunction()
+//     id = setTimeout(()=>{
+//         fetchFunction()
 
-    }, delay)
+//     }, delay)
 
+//   }
+
+  
+document.getElementById("search").addEventListener("keyup", () => {
+    debounceFun(debounce);
+  });
+
+let id;
+
+let debounceFun = (deb) => {
+  if (id) {
+    clearTimeout(id);
   }
+  id = setTimeout(() => {
+    deb();
+  }, 400);
+};
+
+
 
   //Creating fetch Function
-  async function fetchFunction(){
-      
+  async function debounce(){
     
-    searchLocation();
+    let city_name=document.getElementById("search").value;
+    //  console.log(city);
+    let res=await fetch(`http://localhost:3000/city-name?q=${city_name}`)
+    let data=await res.json();
+    apprndData(data);
 
   }
 
+  Fetch_Cities();
+  async function Fetch_Cities(){
+    
+    let res = await fetch(`http://localhost:3000/city-name`)
+			let data = await res.json();
+    apprndData(data);
 
+  }
 
 
    //Append Data Function 
    function apprndData(data){
-
-    
-    
-
     document.querySelector("#show-results-div").innerHTML = "";
-
-    
 
     if(data.length >= 1){
     //Map Data
@@ -244,12 +271,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
             arr.push(el);
             localStorage.setItem("venueDetails", JSON.stringify(arr));
         })
-
-
-
-       
-        
-
+      
     })
 
     inputTag.addEventListener("keypress", (event)=>{

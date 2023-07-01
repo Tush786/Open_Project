@@ -410,7 +410,6 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 
                 })
 
-
             }
             else{
                 alert("Wrong OTP");
@@ -433,42 +432,44 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
 //Login and pop up full functionalities end
 
 
-
-
-
-
-
-
-
-
-
     // importing footer part
     import footer from "./components/footer.js";
     let footer_div = document.getElementById("footer");
     footer_div.innerHTML = footer();
 
-  
 
-
-
-    let price = localStorage.getItem("finalPrice") * 100
+    // let price = localStorage.getItem("finalPrice") * 100
 
 
     var options = {
-        "key": "rzp_test_VhRZKygRJUvXe9", // Enter the Key ID generated from the Dashboard
-        "amount": price, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+        "key": "rzp_test_fLH9ybgi2Bx6c8", // Enter the Key ID generated from the Dashboard
+        "amount": 10000, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         "currency": "INR",
         "name": "Playo",
         "description": "Test Payment",
-        "image": "https://blog.playo.co/wp-content/uploads/2018/04/Playo-dp-gradient4-1.png",
+        "image": "https://playo-website.imgix.net/company/logo1.png?auto=compress,format",
         // "order_id": "order_Ef80WJDPBmAeNt", //Pass the `id` obtained in the previous step
         // "account_id": "acc_Ef7ArAsdU5t0XL",
         "handler": function (response){
             alert(response.razorpay_payment_id);
             alert(response.razorpay_order_id);
             alert(response.razorpay_signature)
+        },
+        
+        "modal": {
+      "ondismiss": function () {
+        if (confirm("Are you sure, you want to close the form?")) {
+          txt = "You pressed OK!";
+          console.log("Checkout form closed by the user");
+        } else {
+          txt = "You pressed Cancel!";
+          console.log("Complete the Payment")
         }
+      }
+    }
     };
+
+
     var rzp1 = new Razorpay(options);
     document.getElementById('rzp-button1').onclick = function(e){
         rzp1.open();

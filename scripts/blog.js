@@ -205,142 +205,129 @@
 //Search Feature in news api End================================>
 
 // <---------------- Api integration for news----------------->
+
+
+ import displayResults from "../components/appendnews.js";
+
   var Left_Container=document.querySelector(".left-box");
   
 
-document.getElementById("search").addEventListener("keyup", () => {
+  document.getElementById("search").addEventListener("keyup", () => {
     debounceFun(debounce);
   });
-
-let id;
-
-let debounceFun = (deb) => {
-  if (id) {
-    clearTimeout(id);
-  }
-  id = setTimeout(() => {
-    deb();
-  }, 400);
-};
-
-var Prev=document.getElementById("Prev");
-Prev.addEventListener("click",previous)
-
-var Next=document.getElementById("Next");
-Next.addEventListener("click",next)
-
-let key = "39f6d3ad984f4b23905100e49c1ab97f";
-let Page=1;
-let totalpages;
-
-
-const debounce = async (Page) => {
-  let search = document.getElementById("search").value;
-  try {
-
-    if(Page==1){
-        Prev.disabled=true;
+  
+  let id;
+  let debounceFun = (deb) => {
+    if (id) {
+      clearTimeout(id);
     }
-    else{
-        Prev.disabled=false;
+    id = setTimeout(() => {
+      deb();
+    }, 400);
+  };
+  
+  var Prev = document.getElementById("Prev");
+  Prev.addEventListener("click", previous);
+  
+  var Next = document.getElementById("Next");
+  Next.addEventListener("click", next);
+  
+  let key = "2884523d5cc4434c82759770bdf12781";
+  let Page = 1;
+  let totalpages;
+  
+  const debounce = async () => {
+    let search = document.getElementById("search").value;
+    try {
+      if (Page == 1) {
+        Prev.disabled = true;
+      } else {
+        Prev.disabled = false;
+      }
+  
+      if (Page == totalpages) {
+        Next.disabled = true;
+      } else {
+        Next.disabled = false;
+      }
+  
+      let response = await fetch(
+        `https://newsapi.org/v2/everything?q=${search}&sortBy=popularity&page=${Page}&pageSize=5&language=en&apiKey=${key}`
+      );
+  
+      let data = await response.json();
+      totalpages = Math.ceil(data.length / 5);
+      document.getElementById("Page_No").textContent = Page;
+  
+      displayResults(data.articles,Left_Container);
+    } catch (error) {
+      console.log(error);
+      var errorElement = document.createElement("h1");
+      errorElement.textContent = "Result Not Found!";
+      Left_Container.append(errorElement);
     }
-
-    if(Page==totalpages){
-        Next.disabled=true;
-    }
-    else{
-        Next.disabled=false;
-    }
-
-
-    let response = await fetch(
-      `https://newsapi.org/v2/everything?q=${search}&sortBy=popularity&page=${Page}&pageSize=5&language=en&apiKey=${key}`
-    );
-   
-    let data = await response.json();
-    
-    totalpages = data.length;
-    document.getElementById("Page_No").textContent = Page;
-    console.log(data.articles);
-
-    displayResults(data.articles);
-  } catch (error) {
-    console.log(error);
-    var errorElement = document.createElement("h1");
-    errorElement.textContent = "Result Not Found!";
-    Left_Container.append(errorElement);
-  }
-};
-
-function previous(){
-    if(Page==1){
-        return;
+  };
+  
+  function previous() {
+    if (Page == 1) {
+      return;
     }
     Page--;
-    debounce(Page)
-}
-
-function next(){
-    if(Page==totalpages){
-        return;
+    debounce();
+    F_Sports_News();
+    F_Health_News()
+    F_Cricket_News()
+    F_Football_News()
+    F_Tennies_News()
+  }
+  
+  function next() {
+    if (Page == totalpages) {
+      return;
     }
     Page++;
-    debounce(Page)
-}
+    debounce();
+    F_Sports_News();
+    F_Health_News()
+    F_Cricket_News()
+    F_Football_News()
+    F_Tennies_News()
+  }
 
-
-function displayResults(data){
-    Left_Container.textContent=""
-      data.map(({title,description,urlToImage,url})=>{
-            // console.log(title)
-            var Div_M=document.createElement("div");
-            Div_M.setAttribute("id","Dynamic_News");
-
-            var Div=document.createElement("div");
-           
-            var Img=document.createElement("img");
-            Img.src=urlToImage;
-
-            var P=document.createElement("h4");
-            P.textContent=description;
-
-            Div.append(Img,P);
-
-            var H=document.createElement("h1");
-            H.textContent=title;
-
-            var Btn=document.createElement("a");
-            Btn.setAttribute("class","button")
-            Btn.textContent="View Post";
-            Btn.href=url
-
-            Div_M.append(Div,H,Btn);
-
-     Left_Container.append(Div_M)
-
-      });
-}
 
 // <-------------------- API call for Health news-------------->
 
 document.getElementById("health-news").addEventListener("click",F_Health_News);
 
-let KEY = "39f6d3ad984f4b23905100e49c1ab97f";
+let KEY = "2884523d5cc4434c82759770bdf12781";
 async function F_Health_News(){
  
   try {
 
+    if (Page == 1) {
+      Prev.disabled = true;
+    } else {
+      Prev.disabled = false;
+    }
+
+    if (Page == totalpages) {
+      Next.disabled = true;
+    } else {
+      Next.disabled = false;
+    }
+    
+
      let response = await fetch(
-      `https://newsapi.org/v2/everything?q=Health&sortBy=popularity&pageSize=5&language=en&apiKey=${KEY}`
+      `https://newsapi.org/v2/everything?q=Health&sortBy=popularity&page=${Page}&pageSize=5&language=en&apiKey=${key}`
     );
    
     let data = await response.json();
     
-    totalpages = data.length;
+    totalpages = Math.ceil(data.length/5);
     document.getElementById("Page_No").textContent = Page;
     console.log(data.articles);
 
-    displayResults(data.articles);
+    displayResults(data.articles,Left_Container);
   } catch (error) {
     console.log(error);
     var errorElement = document.createElement("h1");
@@ -354,23 +341,34 @@ async function F_Health_News(){
 // <------------------------- Sport News API call------------>
 // document.getElementById("sports-news").addEventListener("click",F_Sports_News);
 
-let Key_S = "39f6d3ad984f4b23905100e49c1ab97f";
+let Key_S = "2884523d5cc4434c82759770bdf12781";
 F_Sports_News()
 async function F_Sports_News(){
  
   try {
+    if (Page == 1) {
+      Prev.disabled = true;
+    } else {
+      Prev.disabled = false;
+    }
+
+    if (Page == totalpages) {
+      Next.disabled = true;
+    } else {
+      Next.disabled = false;
+    }
 
      let response = await fetch(
-      `https://newsapi.org/v2/everything?q=Sports&sortBy=popularity&pageSize=5&language=en&apiKey=${Key_S}`
+      `https://newsapi.org/v2/everything?q=Sports&sortBy=popularity&page=${Page}&pageSize=5&language=en&apiKey=${key}`
     );
    
     let data = await response.json();
     
-    totalpages = data.length;
+    totalpages = Math.ceil(data.length/5);
     document.getElementById("Page_No").textContent = Page;
     console.log(data.articles);
 
-    displayResults(data.articles);
+    displayResults(data.articles,Left_Container);
   } catch (error) {
     console.log(error);
     var errorElement = document.createElement("h1");
@@ -385,22 +383,35 @@ async function F_Sports_News(){
 
 document.getElementById("Cricket").addEventListener("click",F_Cricket_News);
 
-let Key_C = "39f6d3ad984f4b23905100e49c1ab97f";
+let Key_C = "2884523d5cc4434c82759770bdf12781";
 async function F_Cricket_News(){
  
   try {
 
+    if (Page == 1) {
+      Prev.disabled = true;
+    } else {
+      Prev.disabled = false;
+    }
+
+    if (Page == totalpages) {
+      Next.disabled = true;
+    } else {
+      Next.disabled = false;
+    }
+    
+
      let response = await fetch(
-      `https://newsapi.org/v2/everything?q=Cricket&sortBy=popularity&pageSize=5&language=en&apiKey=${Key_C}`
+      `https://newsapi.org/v2/everything?q=Cricket&sortBy=popularity&page=${Page}&pageSize=5&language=en&apiKey=${key}`
     );
    
     let data = await response.json();
     
-    totalpages = data.length;
+    totalpages = Math.ceil(data.length/5);
     document.getElementById("Page_No").textContent = Page;
     console.log(data.articles);
 
-    displayResults(data.articles);
+    displayResults(data.articles,Left_Container);
   } catch (error) {
     console.log(error);
     var errorElement = document.createElement("h1");
@@ -414,22 +425,36 @@ async function F_Cricket_News(){
 
 document.getElementById("Football").addEventListener("click",F_Football_News);
 
-let Key_F = "39f6d3ad984f4b23905100e49c1ab97f";
+let Key_F = "2884523d5cc4434c82759770bdf12781";
 async function F_Football_News(){
  
   try {
 
+    if (Page == 1) {
+      Prev.disabled = true;
+    } else {
+      Prev.disabled = false;
+    }
+
+    if (Page == totalpages) {
+      Next.disabled = true;
+    } else {
+      Next.disabled = false;
+    }
+
+
+
      let response = await fetch(
-      `https://newsapi.org/v2/everything?q=Football&sortBy=popularity&pageSize=5&language=en&apiKey=${Key_F}`
+      `https://newsapi.org/v2/everything?q=Football&sortBy=popularity&page=${Page}&pageSize=5&language=en&apiKey=${key}`
     );
    
     let data = await response.json();
     
-    totalpages = data.length;
+    totalpages = Math.ceil(data.length/5);
     document.getElementById("Page_No").textContent = Page;
     console.log(data.articles);
 
-    displayResults(data.articles);
+    displayResults(data.articles,Left_Container);
   } catch (error) {
     console.log(error);
     var errorElement = document.createElement("h1");
@@ -444,22 +469,35 @@ async function F_Football_News(){
 
 document.getElementById("Tennies").addEventListener("click",F_Tennies_News);
 
-let Key_T = "39f6d3ad984f4b23905100e49c1ab97f";
+let Key_T = "2884523d5cc4434c82759770bdf12781";
 async function F_Tennies_News(){
  
   try {
 
+    if (Page == 1) {
+      Prev.disabled = true;
+    } else {
+      Prev.disabled = false;
+    }
+
+    if (Page == totalpages) {
+      Next.disabled = true;
+    } else {
+      Next.disabled = false;
+    }
+    
+
      let response = await fetch(
-      `https://newsapi.org/v2/everything?q=Tennies&sortBy=popularity&pageSize=5&language=en&apiKey=${Key_T}`
+      `https://newsapi.org/v2/everything?q=Health&sortBy=popularity&page=${Page}&pageSize=5&language=en&apiKey=${key}`
     );
    
     let data = await response.json();
     
-    totalpages = data.length;
+    totalpages = Math.ceil(data.length/5);
     document.getElementById("Page_No").textContent = Page;
     console.log(data.articles);
 
-    displayResults(data.articles);
+    displayResults(data.articles,Left_Container);
   } catch (error) {
     console.log(error);
     var errorElement = document.createElement("h1");
